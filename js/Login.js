@@ -1,10 +1,9 @@
 // Simular una base de datos de usuarios
 const usuarios = [
-  { id: 1, usuario: 'usuario1', clave: '1234', falla: 0 },
-  { id: 2, usuario: 'usuario2', clave: '5678', falla: 0 },
-  { id: 3, usuario: 'usuario3', clave: '9101', falla: 0 },
-  { id: 4, usuario: 'usuario4', clave: '1121', falla: 0 },
-  { id: 5, usuario: 'usuario5', clave: '3141', falla: 0 }
+  { id: 1, usuario: 'Defa', clave: '1234', falla: 0 },
+  { id: 2, usuario: 'Veronica', clave: '5678', falla: 0 },
+  { id: 3, usuario: 'Oskar', clave: 'Profe', falla: 0 },
+  { id: 4, usuario: 'Invitado', clave: 'Visor', falla: 0 },
 ];
 
 function pruebaBoton() {
