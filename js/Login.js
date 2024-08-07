@@ -21,7 +21,7 @@ function pruebaBoton() {
       // Restablecer los intentos fallidos en caso de éxito
       usuario.falla = 0;
       // Redirigir a la página Dashboard.html y pasar el nombre de usuario como variable
-      window.open('../Project-1/Pages/Dashboard.html?user=' + usuario.usuario, '_self');
+      window.open('../Pages/Dashboard.html?user=' + usuario.usuario, '_self');
     } else {
       usuario.falla++;
       alert('Error al escribir Usuario o Contraseña');
