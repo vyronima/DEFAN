@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuidora de Arroz</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Sistema de Ventas de Arroz</h1>
+        <form id="sales-form" class="mt-4">
+            <div class="form-group">
+                <label for="amount">Cantidad:</label>
+                <input type="number" id="amount" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="unit">Unidad:</label>
+                <select id="unit" class="form-control" required>
+                    <option value="kilos">Kilos</option>
+                    <option value="libras">Libras (1 libra = 0.4536 kilos)</option>
+                    <option value="gramos">Gramos (1 gramo = 0.001 kilos)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="warehouse">Bodega:</label>
+                <select id="warehouse" class="form-control" required>
+                    <option value="bodega1">Bodega 1 (100,000 kilos)</option>
+                    <option value="bodega2">Bodega 2 (230,000 kilos)</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" onclick="makeSale()">Realizar Venta</button>
+        </form>
+
+        <div id="results" class="mt-4"></div>
+
+        <h2 class="mt-5">Resumen de Ventas</h2>
+        <table class="table table-bordered mt-3">
+            <thead>
+                <tr>
+                    <th>Bodega</th>
+                    <th>Ventas Totales (kilos)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bodega 1</td>
+                    <td id="total-sales-bodega1">0</td>
+                </tr>
+                <tr>
+                    <td>Bodega 2</td>
+                    <td id="total-sales-bodega2">0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/program5.js"></script>
+</body>
+</html>
