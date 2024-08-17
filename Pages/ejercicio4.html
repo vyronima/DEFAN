@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Crédito</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Simulador de Crédito</h1>
+        <form id="loan-form" class="mt-4">
+            <div class="form-group">
+                <label for="loan-amount">Valor del Préstamo:</label>
+                <input type="number" id="loan-amount" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="loan-term">Número de Cuotas:</label>
+                <input type="number" id="loan-term" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="credit-type">Línea de Crédito:</label>
+                <select id="credit-type" class="form-control" required>
+                    <option value="libre_inversion">Libre Inversión (2.5% mensual)</option>
+                    <option value="libranza">Libranza (2.9% mensual)</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" onclick="calculateLoan()">Calcular</button>
+        </form>
+
+        <div id="results" class="mt-4"></div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/program4.js"></script>
+</body>
+</html>
